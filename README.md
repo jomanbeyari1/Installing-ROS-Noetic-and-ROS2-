@@ -19,7 +19,7 @@ Update packages and install ROS Noetic.
 
 4-Set up ROS environment: bash echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc source ~/.bashrc.
 
-5-Install additional tools:
+5-Install additional tools and dependencies:
 bash sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential.
 
 6.Initialize rosdep: bash sudo rosdep init rosdep update.
@@ -42,6 +42,8 @@ Prerequisites: Ensure you have Ubuntu 22.04 before proceeding.
 
 4-Set up ROS2 environment: bash echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc source ~/.bashrc.
 
+5-Verify Installation:Run ROS2 core service---> ros2 doctor.
+
 (Documenting Steps on GitHub:)
 
 1-Create a GitHub Repository:
@@ -49,10 +51,10 @@ Go to GitHub and create a new repository named ros-installation-guide.
 Set the repository as public or private, depending on your preference.
 
 2-Upload Files to GitHub 1.Initialize the repository locally: bash git init git remote add origin https://github.com/YOUR_USERNAME/ros-installation-guide.git
-and Create a README.md file and write the guide in it: bash echo "# ROS Noetic and ROS2 Humble Installation Guide" > README.md
+and 3-Create a README.md file and write the guide in it: bash echo "# ROS Noetic and ROS2 Humble Installation Guide" > README.md
 
 
-3-Stage and commit the files:
+4--Stage and commit the files:
 bash git add . git commit -m "Added installation guide"
 
-4-Push files to GitHub: bash git branch -M main git push -u origin main
+5-Push files to GitHub: bash git branch -M main git push -u origin main
